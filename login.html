@@ -1,0 +1,48 @@
+
+<!Doctype html>
+<html>
+<script>
+	function login(){
+		var user1=document.getElementById("user").value;
+		var pass1=document.getElementById("password").value;
+		
+		
+		if(user1==sessionStorage.user&&pass1==sessionStorage.pass){
+		
+				return true;
+		}
+		else{
+			alert("invalid user");
+			return false;
+			}
+	}
+</script>
+	<title>Myta bussiness&reg;
+	</title>
+	<link type="text/css" rel="stylesheet" href="style.css">	
+	<head><meta charset="utf-8"/>
+	</head>
+		<body>
+		
+		
+		<div class="login-box"><h1>Login here</h1>
+
+				
+		
+				
+				<form name=fr1 method="post" onsubmit="return login()" action="main.html">
+				Username*</p>
+				<input type="text" name="user" id="user" placeholder="Enter username" required>
+				<p>
+				Password*
+				</p>
+				<input type="password" name="password" id="password" placeholder="Enter password" required>
+				<br>
+				
+				<input type="submit" value="submit" >
+			</br>
+				
+		</form></body></div>
+		
+		
+</html>
